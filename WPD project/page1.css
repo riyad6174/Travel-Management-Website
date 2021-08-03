@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+section {
+    
+    width: 100%;
+    
+    background-color :#f18684;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 4%;
+      padding-right: 4%;
+      box-sizing: border-box;
+}
+
+nav {
+  position: relative;
+  top: 0;
+  background-color: #fff;
+}
+nav .container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+}
+nav .container ul li {
+  display: inline-block;
+}
+nav .container ul li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: black;
+}
+nav .container ul li.active {
+  background-color: crimson;
+  transition: 0.3s ease; 
+}
+nav .container ul li.active a {
+  color: rgb(255, 255, 255);
+}
+
+.wrapper{
+
+  display: inline-flex;
+}
+.wrapper .static{
+  color: #fff;
+  font-size: 70px;
+  font-weight: 550;
+}
+.wrapper .dynamic{
+margin-left: 15px;
+height: 95px;
+line-height: 95px;
+overflow: hidden;
+
+
+
+
+
+}
+.wrapper .dynamic li{
+  color: darkred;
+  list-style: none;
+  font-size: 50px;
+  font-weight: 600;
+  top: 0;
+  position: relative;
+  animation: slide 3s steps(2) infinite;
+}
+
+@keyframes slide{
+  100%{
+   
+   top: -180px;
+  }
+}
+
+.wrapper .dynamic li span{
+  position: relative;
+}
+.wrapper .dynamic li span::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #f18684;
+  border-left: 2px solid darkred;
+  top: 2px;
+  left: 0;
+  animation: typing 1.5s steps(5) infinite;
+}
+
+@keyframes typing{
+  100%{
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
+
+#guide{
+  height: 100vh;
+  width:100%;
+  background-color: #f18684;
+}

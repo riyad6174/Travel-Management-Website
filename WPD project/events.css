@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+  
+    scroll-behavior: smooth;
+  }
+  section {
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 4%;
+      padding-right: 4%;
+      box-sizing: border-box;
+    
+  }
+
+
+
+  nav {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+  }
+  nav .container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+  }
+  nav .container ul li {
+    display: inline-block;
+  }
+  nav .container ul li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: black;
+  }
+  nav .container ul li.active {
+    background-color: crimson;
+    transition: 0.3s ease; 
+  }
+  nav .container ul li.active a {
+    color: rgb(255, 255, 255);
+  }
+  #event{
+      padding-top: 10%;
+      box-sizing: border-box;
+     background-color:#fff;
+  }
+  .block{
+     
+      
+      width: 1000px;
+        position: absolute;
+      height: 800px;
+      padding: 0px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      background-color:#fff;
+
+     
+  }
+  table{
+      position: absolute;
+      z-index: 2;
+      left: 50%;
+      right: 50%;
+      top: 40%;
+      padding: 0px;
+      transform: translate(-50%,-50%);
+      width: 100%;
+     text-align: center;
+     overflow: hidden;
+     border-radius: 12px 12px 0 0;
+     box-shadow: 0 6px 12px rgba(32,32,32,0.3);
+  }
+  th,td{
+      padding: 12px 15px;
+      border: 1px solid lightgray;
+        color: midnightblue;
+        border-collapse: collapse;
+
+
+  }
+  th{
+      background-color: rgb(243, 174, 209);
+  }
+  th{
+      background: #f18684;
+      color: #fff;
+      text-transform: uppercase;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+td{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+tr:nth-child(even){
+    background-color: antiquewhite;
+}
+tr:nth-child(odd){
+   background-color: #eeee;
+}
+tr:nth-child(odd):hover{
+    background-color:lightsteelblue;
+    transform: scale(1.1);
+    transition: tansform 300ms ease-in;
+}
+tr:nth-child(even):hover{
+    background-color:lightpink;
+    transform: scale(1.1);
+    transition: tansform 300ms ease-in;
+}
+
+.checked1{
+   color: orange;
+}
+#finished{
+    color: rgb(212, 57, 57);
+}
+#upcoming{
+    color: forestgreen;
+}
+
+.wrapper{
+
+    display: inline-flex;
+  }
+  .wrapper .static{
+    color:black;
+    font-size: 70px;
+    font-weight: 550;
+  }
+  .wrapper .dynamic{
+  margin-left: 15px;
+  height: 95px;
+  line-height: 95px;
+  overflow: hidden;
+  
+  
+  
+  
+  
+  }
+  .wrapper .dynamic li{
+    color: darkred;
+    list-style: none;
+    font-size: 50px;
+    font-weight: 600;
+    top: 0;
+    position: relative;
+    animation: slide 3s steps(2) infinite;
+  }
+  
+  @keyframes slide{
+    100%{
+     
+     top: -180px;
+    }
+  }
+  
+  .wrapper .dynamic li span{
+    position: relative;
+  }
+  .wrapper .dynamic li span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    border-left: 2px solid darkred;
+    top: 2px;
+    left: 0;
+    animation: typing 1.5s steps(5) infinite;
+  }
+  
+  @keyframes typing{
+    100%{
+      left: 100%;
+      margin: 0 -35px 0 35px;
+    }
+  }
+  #text h2 span{
+      position: relative;
+      width: 100%;
+      min-height: 300px;
+      color:#ff0157;
+      font-weight: 700;
+      font-size: 1.5em;
+
+    
+ 
+  }
+  #home{
+    height: 50vh;
+  }

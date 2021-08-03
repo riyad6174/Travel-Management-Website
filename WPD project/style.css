@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+
+  scroll-behavior: smooth;
+}
+#logo{
+
+  cursor: pointer;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  
+  background-color:#fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 4%;
+    padding-right: 4%;
+    box-sizing: border-box;
+  
+}
+
+
+#home {
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/back.jpeg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.row{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    height: 88%;
+    align-items: center;
+}
+.row col{
+    flex-basis: 50%;
+
+}
+
+.row .col h1{
+    font-family: 'Cabin', sans-serif;
+    color: #fff;
+    font-size: 100px;
+}
+.row .col h2{
+    font-family: 'Cabin', sans-serif;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+}
+.btn{
+ width: 180px;
+ color: #fff;
+ font-size: 16px;
+ padding: 12px 0;
+ background: crimson;
+ border: 0;
+ border-radius: 20px;
+ outline: none;
+ margin-top: 30px;
+ cursor: pointer;
+
+}
+.card{
+   
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+
+
+}
+.card1{
+    background-image: url(images/pic-1.png);
+}
+.card2{
+    background-image: url(images/pic-2.png);
+}
+.card3{
+    background-image: url(images/pic-3.png);
+}
+.card4{
+    background-image: url(images/pic-4.png);
+}
+.card:hover{
+transform: translateY(-10px);
+}
+
+h5{
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+}
+.card p{
+    color: #fff;
+    text-shadow: 0 0 15px #fff;
+    font-size:12px ;
+}
+#gallery {
+  margin-top: 5%;
+  position: relative;
+  overflow: scroll;
+ 
+}
+ .container3{
+
+  position: absolute;
+  column-count: 4;
+  padding: 20px;
+ 
+
+}
+
+.images{
+
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 5px;
+ overflow: hidden;
+}
+.container3 img{
+  width: 100%;
+  transition: 0.25s ease-in-out;
+}
+
+ .images:hover img{
+  transform: scale(1.1);
+
+}
+.images h1{
+  position: absolute;
+  padding: 5px;
+  margin: 5px;
+  font-size: 25px;
+  background: #5c5c5c;
+  color: #fff;
+  border-radius: 5px;
+  opacity: 0;
+  z-index: 1;
+  transition: 0.25 ease-in-out;
+
+
+}
+
+.images:hover h1{
+ opacity: 0.5; 
+}
+  
+
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+nav .container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px;
+}
+nav .container ul li {
+  display: inline-block;
+}
+nav .container ul li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: black;
+}
+nav .container ul li.active {
+  background-color: crimson;
+  transition: 0.3s ease; 
+}
+nav .container ul li.active a {
+  color: rgb(255, 255, 255);
+}
+#services{
+ margin-top: 5%;
+ position: relative;
+ overflow: scroll;
+}
+
+.photo{
+ 
+  height: 90%;
+  width: auto;
+flex: 1;
+ display: flex;
+ text-align: center;
+  position: relative;
+ color: #fff;
+ padding: 25px;
+ transition: 0.6s;
+ 
+}
+.photo h2{
+  text-align: center;
+
+}
+
+.photo:nth-child(1){
+background: #f18684;
+
+  
+  
+  
+}
+
+.photo:nth-child(2){
+background: #283491;
+text-align: center;
+
+ 
+  
+ 
+}
+.photo:nth-child(3){
+background: #6ee2f1;
+}
+
+.caption{
+  max-width: 230px;
+  font-size: 20px;
+  margin: 28px 0;
+  display:none;
+
+}
+.photo img {
+  position: absolute;
+  width: 400px;
+  bottom: 0;
+  right: 0;
+}
+
+#summer{
+  width: 350px;
+}
+#food{
+  width: 250px;
+}
+
+.photo:hover{
+
+  flex-grow: 2;
+}
+
+.photo:hover .caption{
+  display:block;
+}
+.caption button{
+  border: 2px solid #fff;
+  background: transparent;
+  outline: none;
+  padding: 8px 18px;
+  color: #fff;
+  border-radius: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 12px;
+
+}
+
+#contactus{
+ margin-top: 5%;
+ position: relative;
+ min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+  background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(images/pexels-photo-4253829.jpeg);
+  
+  background-size: cover;
+  background-position: center;
+  
+   
+
+}
+#contactus .content{
+  max-width: 800px;
+  text-align: center;
+}
+#contactus .content h2{
+  font-size: 36px;
+  font-weight: 500;
+  color: rgb(255, 254, 254);
+}
+#contactus  .content p{
+  
+  font-weight: 300;
+  color: rgb(252, 250, 250);
+}
+#contactus .container2{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30PX;
+}
+
+.container2 .contactinfo{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.container2 .contactinfo .box{
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.container2 .contactinfo .box .text{
+  display: flex;
+ margin-left: 20px;
+ font-size: 16px;
+ color: rgb(245, 243, 243);
+ flex-direction: column;
+ font-weight: 300;
+}
+.container2 .contactinfo .box .text h3{
+  font-weight: 500;
+  color: #e66f40;
+  
+
+
+}
+.contactform{
+  width: 40%;
+  padding: 40px;
+  background: white;
+ 
+}
+
+
+.contactform{
+  font-size: 15px;
+  color: #333;
+  font-weight: 400;
+
+}
+.contactform .inputBox{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+
+}
+
+.contactform .inputBox input,
+ .contactform .inputBox textarea{
+  
+  width: 100%;
+  padding: 5px 0; 
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+
+
+
+.contactform .inputBox span{
+  position: absolute;
+  left: 0;
+  padding: 5px 0; 
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
+
+.contactform .inputBox input:focus ~ span,
+.contactform .inputBox input:valid ~ span,
+.contactform .inputBox textarea:focus ~ span,
+.contactform .inputBox textarea:valid ~ span
+{
+color: #e91e63;
+font-size: 12px;
+transform: translateY(-20px);
+}
+
+.contactform .inputBox input[type="submit"]
+{
+  width: 100px;
+  background:#00bcd4 ;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
